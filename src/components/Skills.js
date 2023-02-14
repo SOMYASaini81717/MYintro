@@ -10,8 +10,7 @@ import meter9 from "../assets/img/8.png";
 import meter10 from "../assets/img/10.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -47,43 +46,43 @@ Understanding of core react concepts like DOM manipulation,<br></br> Babel trans
 Knows how to sync workflows from different modules.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="html-img" />
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="css-img" />
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="js-img" />
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter4} alt="Image" />
+                                <img src={meter4} alt="react-img" />
                                 <h5  style={{marginTop:16}}>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter5} alt="Image" />
+                                <img src={meter5} alt="node.js-img" />
                                 <h5  style={{marginTop:26}}>Node.js</h5>
                             </div>
                             <div className="item">
-                                <img src={meter6} alt="Image" />
+                                <img src={meter6} alt="mongodb-img" />
                                 <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={meter7} alt="Image" />
+                                <img src={meter7} alt="ex-img" />
                                 <h5>Express</h5>
                             </div>
                             <div className="item">
-                                <img src={meter9} alt="Image" />
+                                <img src={meter9} alt="github-img" />
                                 <h5>GitHub</h5>
                             </div>
                             <div className="item" style={{marginTop:10}}>
-                                <img src={meter8} alt="Image" />
+                                <img src={meter8} alt="t-css-img" />
                                 <h5 style={{marginTop:26}}>Tailwind CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter10} alt="Image" />
+                                <img src={meter10} alt="vscode-img" />
                                 <h5 >VS Code</h5>
                             </div>
                         </Carousel>
@@ -91,7 +90,7 @@ Knows how to sync workflows from different modules.</p>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="back-img" />
     </section>
   )
 }

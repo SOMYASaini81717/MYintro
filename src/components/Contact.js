@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/120.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
+import Resume from "./cv.pdf"
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 export const Contact = () => {
 
 
@@ -22,16 +23,10 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Introduction</h2>
-                <form>
-                <h5>Father Name <span>&nbsp; -&nbsp; &nbsp;Mr Mohan Lal Saini</span></h5><br/>
-                <h5>Mother Name <span>&nbsp; -&nbsp; &nbsp; Mrs Sangeeta Saini</span></h5><br/>
-                <h5>DOB<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; 27/05/2000</span></h5><br/>
-                {/* <h5>DOB<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; 27/05/2000</span></h5> */}
-                <h5>Address <span>&nbsp; -&nbsp; &nbsp; Hardev Nagar Mazra Road Shamli</span></h5>
-                
-                </form>
+                <h2 > Download Resume</h2>
+                <a href={Resume} download>
+                  <button>Download CV <ArrowRightCircle size={25} /></button>
+                  </a>
               </div>}
             </TrackVisibility>
           </Col>
